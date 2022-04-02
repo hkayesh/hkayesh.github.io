@@ -27,7 +27,7 @@ repository               : hkayesh/hkayesh.github.io # GitHub username/repo-name
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png"
 masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -79,9 +79,9 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : hkayesh
 facebook:
-  username               :
+  username               : shamolbit
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "Humayun Kayesh"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : "I am an **amazing** person."
+  bio              : "AI/ML, NLP, Data Science / Software Engineer / Commonwealth Scholar"
   location         : "Gold Coast, Australia"
-  email            :
+  email            : "hkayesh@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -114,9 +114,9 @@ author:
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-#    - label: "LinkedIn"
-#      icon: "svg-inline--fa fa-linkedin fa-w-14 fa-fw"
-#      url: "https://www.linkedin.com/in/hkayesh/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hkayesh"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/hkayesh"
@@ -135,22 +135,25 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://twitter.com/hkayesh"
+#    - label: "Facebook"
+#      icon: "fab fa-fw fa-facebook-square"
+#      # url:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hkayesh"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/hkayesh/"
+#    - label: "GitLab"
+#      icon: "fab fa-fw fa-gitlab"
+#      # url:
+#    - label: "Bitbucket"
+#      icon: "fab fa-fw fa-bitbucket"
+#      # url:
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      # url:
 
 
 # Reading Files
