@@ -7,7 +7,7 @@ permalink: /cv/
 ### Doctor of Philosophy (PhD), 2018 – 2022
 *Griffith University, Australia*
 
-- Thesis Topic: Deep Learning for Causal Discovery in Short Text
+- Thesis Topic: Deep Learning for Causal Discovery in Texts
 - Research Area: Causality Detection, Natural Language Processing, Knowledge Discovery, Machine Learning, 
 Text Mining, Data Science 
 
@@ -29,7 +29,7 @@ Text Mining, Data Science
 
 Responsibilities 
 - Designed and developed a machine learning model for hospital length of stay prediction
-- Improved the accuracy of the existing LoS prediction model by more than 50%
+- Improved the accuracy of the existing LoS prediction model by more than 20%
 - Developed a patient arrival rate prediction model for hospitals
 
 ### AI Research Engineer, Contrat, (Sep 2018 - Apr 2019)
@@ -72,7 +72,7 @@ datasets, schema validation), **R** (Text data mining with dplyr, NLP, tm), **C/
 **PHP** (web application development, REST API)
 
 ## Leadership Roles
-- Founded Dhaka University IT Society (DUITS) and worked as an Executive Committee Member from 2012 to 2013
+- Founded Dhaka University IT Society (DUITS) and served as an Executive Committee Member from 2012 to 2013
 - Led Griffith University Bangladesh Association, Gold Coast (GUBAGC) as a Secretary from 2019 to 2020
 - Mentored junior software engineers at DeepCognito
 - Tutored a Python programming course at Griffith University

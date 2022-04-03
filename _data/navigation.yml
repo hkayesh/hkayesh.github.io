@@ -6,5 +6,7 @@ main:
 #     url: /publications/
    - title: "CV"
      url: /cv/
+   - title: "Resources"
+     url: /resources/
    - title: "About Me"
      url: /
