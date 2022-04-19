@@ -94,7 +94,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-X7XLSTY1VY"
     anonymize_ip         : # true, false (default)
@@ -307,6 +307,7 @@ defaults:
       layout: single
       author_profile: true
       toc: true
+      analytics: true
   # _portfolio
   - scope:
       path: ""
@@ -316,3 +317,5 @@ defaults:
       classes: wide
       author_profile: true
       share: true
+      analytics: true
+      related: true
