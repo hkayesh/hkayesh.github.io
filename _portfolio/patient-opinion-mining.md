@@ -1,5 +1,5 @@
 ---
-title: Patient Opinion Mining
+title: Patient Opinion Mining from Feedback Comments
 excerpt: In this project, machine learning techniques are applied to detect patient sentiment on different aspects of hospital care in the UK.
 
 header:
