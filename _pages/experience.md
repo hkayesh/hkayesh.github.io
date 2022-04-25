@@ -11,8 +11,8 @@ Responsibilities
 - Improved the accuracy of the existing LoS prediction model by more than 20%
 - Developed a patient arrival rate prediction model for hospitals
 
-### AI Research Engineer, Contrat, (Sep 2018 - Apr 2019)
-DeepCognito Ltd., Manchester, UK
+### AI Research Engineer, Part-time, (Sep 2018 - Apr 2019)
+*DeepCognito Ltd., Manchester, UK*
 
 Responsibilities 
 - Extracted topics and associate sentiments from patient feedback comments
