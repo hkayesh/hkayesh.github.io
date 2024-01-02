@@ -2,6 +2,7 @@
 layout: single
 title: "Resources"
 permalink: /resources/
+classes: wide
 ---
 
 [//]: # (You can [get the PDF]&#40;{{ site.url }}/assets/files/Humayun-Kayesh-CV.pdf&#41; directly.)

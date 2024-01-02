@@ -2,43 +2,48 @@
 layout: single
 title: "Work Experience"
 permalink: /experience/
+classes: wide
 ---
-### Research Assistant, Part-time, (Jun 2021 - Present)
-*HealthcareLogic Pty Ltd., Gold Coast*
+### Machine Learning Engineer 
+*Robotic Marketer, Melbourne (Jun 2022 - present)*
+ 
+- Engineered algorithms employing semantic similarity, OpenSearch, and GPT models to recommend relevant events, media outlets, and awards for clients, consistently maintaining accuracy above 80%.
+- Developed a serverless application for identifying business competitors through automatic Google search, employing semantic similarity for filtering and ranking, achieving accuracy levels between 80-90%.
+- Fine-tuned and integrated GPT models to autonomously generate customized blog headings, enhancing content creation efficiency.
+- Developed serverless applications on AWS Lambda for website scraping and extraction of valuable data, demonstrating proficiency in data acquisition.
+- Designed and implemented backend APIs using Flask in Python, fostering seamless communication between applications and ensuring robust system architecture.
 
-Responsibilities 
-- Designed and developed a machine learning model for hospital length of stay prediction
-- Improved the accuracy of the existing LoS prediction model by more than 20%
-- Developed a patient arrival rate prediction model for hospitals
+### Research Assistant [Part-time] 
+*HealthcareLogic, Gold Coast (Jun 2021 - May 2022)*
 
-### AI Research Engineer, Part-time, (Sep 2018 - Apr 2019)
-*DeepCognito Ltd., Manchester, UK*
+- Designed and implemented a machine learning model for predicting hospital length of stay, optimizing patient care planning.
+- Significantly enhanced the accuracy of the existing Length of Stay (LoS) prediction model by over 20%, contributing to more precise healthcare resource allocation.
+- Engineered a patient arrival rate prediction model for hospitals, improving operational efficiency and resource management.
 
-Responsibilities 
-- Extracted topics and associate sentiments from patient feedback comments
-- Applied data loading, preprocessing, segmentation, and topic modeling on patient opinion data
-- Completed an ML model to detect sentiment in news articles
+### AI Research Engineer [Part-time] 
+*DeepCognito, Manchester, UK (Sep 2018 - Apr 2019)*
 
-### Software Engineer (Dec 2015 - Aug 2016)
-*Jaxara IT Limited, Dhaka, Bangladesh*
+- Extracted topics and sentiments from patient feedback comments, enhancing insights into healthcare experiences.
+- Executed data loading, preprocessing, segmentation, and topic modeling on patient opinion data, optimizing information extraction processes.
+- Developed a machine learning model for sentiment detection in news articles, contributing to accurate sentiment analysis across diverse content.
 
-Responsibilities 
-- Transformed client requirements into requirement specification
-- Designed and setup system architecture by following standard practices
-- Applied tools such as Drupal, Jira, and Git for implementation and documentation
+### Software Engineer 
+*Jaxara IT, Dhaka, Bangladesh (Dec 2015 - Aug 2016)*
+
+- Translated client requirements into comprehensive requirement specifications, ensuring a clear understanding of project objectives and expectations.
+- Formulated and implemented system architecture, adhering to industry-standard practices, to create robust and scalable solutions.
+- Utilized tools such as Drupal, Jira, and Git for seamless implementation and meticulous documentation, enhancing project efficiency and collaboration.
   
-### Software Engineer (Apr 2015 - Nov 2015)
-*Four D Communications Ltd., Dhaka, Bangladesh*
+### Software Engineer 
+*Four D Communications, Dhaka, Bangladesh (Apr 2015 - Nov 2015)*
 
-Responsibilities 
-- Developed a hybrid mobile app using the Ionic framework, Cordova, and AngularJS
-- Monitored and fixed issues in a customer relationship management (CRM)
-- Managed software development life cycle using Agile Scrum
+- Engineered a hybrid mobile application utilizing the Ionic framework, Cordova, and AngularJS, showcasing adeptness in cross-platform development.
+- Diagnosed and resolved issues within a customer relationship management (CRM) system, ensuring continuous functionality and optimal user experience.
+- Adhered to Agile Scrum methodologies throughout the software development life cycle, ensuring a streamlined and collaborative approach to project management and delivery.
   
-### Software Engineer (Jun 2013 - Mar 2015)
-*Nascenia IT, Dhaka, Bangladesh*
+### Software Engineer
+*Nascenia IT, Dhaka, Bangladesh (Jun 2013 - Mar 2015)*
 
-Responsibilities 
-- Developed a betting-related PHP web application that requires API integration
-- Optimized the performance of a web application using caching
-- Integrated the social media login API to a web application
+- Spearheaded the creation of dynamic web applications using PHP, JavaScript, and CSS, demonstrating proficiency in full-stack development.
+- Implemented performance optimization strategies through effective caching techniques, resulting in enhanced overall web application speed and responsiveness.
+- Orchestrated seamless integration of authentication systems and social media login features, elevating user experience and engagement within web applications.
