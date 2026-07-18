@@ -1,0 +1,16 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+Gemfile.lock
+.bundle/
+vendor/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
