@@ -199,4 +199,38 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
   }
+
+  /* ----------------------------------------------------------------------
+     4. Hero avatar → masthead transition
+        When the hero photo scrolls under the sticky masthead, the avatar
+        animates into the nav and the title shrinks. Reverses on scroll-up.
+     ---------------------------------------------------------------------- */
+  var masthead = document.querySelector(".masthead");
+  var heroAvatar = document.querySelector(".hero__avatar");
+
+  if (masthead && heroAvatar && !reduceMotion) {
+    var stuck = false;
+
+    var update = function () {
+      var mastheadBottom = masthead.getBoundingClientRect().bottom;
+      var avatarBottom = heroAvatar.getBoundingClientRect().bottom;
+      var shouldStick = avatarBottom < mastheadBottom + 4;
+
+      if (shouldStick !== stuck) {
+        stuck = shouldStick;
+        masthead.classList.toggle("is-stuck", stuck);
+      }
+    };
+
+    var onMastheadScroll = function () {
+      window.requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onMastheadScroll, { passive: true });
+    window.addEventListener("resize", onMastheadScroll);
+  } else if (masthead && reduceMotion) {
+    // Reduced motion: show the masthead avatar immediately
+    masthead.classList.add("is-stuck");
+  }
 })();

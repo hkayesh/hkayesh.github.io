@@ -55,26 +55,56 @@ button:focus-visible {
   padding: 0.85rem 1.5rem;
 }
 
-/* Profile photo in the top-left corner of the header */
+/* Profile photo in the masthead — collapses to zero on the landing page
+   (name takes the space) and animates in when the hero photo scrolls past. */
 .site-avatar {
   display: inline-flex;
-  margin-right: 0.65rem;
   flex: 0 0 auto;
+  overflow: hidden;
 
   img {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    border: 1.5px solid rgba(77, 163, 255, 0.45);
+    border: 2px solid var(--ed-accent);
+    box-shadow: 0 0 0 2px rgba(77, 163, 255, 0.12);
     transition: border-color 0.2s ease, transform 0.2s ease;
   }
 
   &:hover img {
-    border-color: var(--ed-accent);
+    border-color: var(--ed-accent-hover);
     transform: scale(1.05);
   }
+}
+
+/* On the landing page: avatar starts collapsed (name takes full space),
+   expands smoothly into place when the user scrolls past the hero photo. */
+.layout--landing .site-avatar {
+  width: 0;
+  min-width: 0;
+  margin-right: 0;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    margin-right 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.layout--landing .masthead.is-stuck .site-avatar {
+  width: 36px;
+  margin-right: 0.6rem;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Non-landing pages: avatar always visible with normal spacing */
+body:not(.layout--landing) .site-avatar {
+  width: 36px;
+  margin-right: 0.6rem;
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* --------------------------------------------------------------------------
@@ -111,6 +141,12 @@ button:focus-visible {
   font-family: var(--ed-font-display);
   font-weight: 500;
   letter-spacing: 0.01em;
+  font-size: 1.35rem;
+  transition: font-size 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.layout--landing .masthead.is-stuck .site-title {
+  font-size: 1.0625rem;
 }
 
 .greedy-nav a {
@@ -338,6 +374,29 @@ button:focus-visible {
   width: 100%;
 }
 
+.hero__headline {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 0 0 1.75rem;
+
+  @media (max-width: 30em) {
+    gap: 1.1rem;
+  }
+}
+
+.hero__avatar {
+  flex: 0 0 auto;
+  width: clamp(72px, 9vw, 112px);
+  height: clamp(72px, 9vw, 112px);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid var(--ed-accent);
+  box-shadow: 0 0 0 4px rgba(77, 163, 255, 0.12),
+    0 8px 30px rgba(3, 8, 18, 0.5);
+}
+
 .hero__title {
   font-family: var(--ed-font-display);
   font-weight: 500;
@@ -345,7 +404,7 @@ button:focus-visible {
   line-height: 1.08;
   letter-spacing: -0.015em;
   color: var(--ed-text);
-  margin: 0 0 1.75rem;
+  margin: 0;
   border-bottom: 0;
   padding-bottom: 0;
 }
