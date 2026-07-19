@@ -71,7 +71,7 @@ layout: default
       {% if page.collection == "portfolio" %}
         {% assign related_items = site.portfolio | where_exp: "item", "item.id != page.id" %}
         <div class="work__grid">
-          {% for post in related_items limit: 4 %}
+          {% for post in related_items limit: 2 %}
             {% include project-card.html item=post %}
           {% endfor %}
         </div>
