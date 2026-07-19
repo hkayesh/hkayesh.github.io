@@ -28,16 +28,24 @@
     - "Python (pandas, NumPy)"
     - "scikit-learn"
     - "TensorFlow / Keras"
-    - "SQL"
-    - "MongoDB"
     - "Scraping pipelines"
     - "R"
 
 - name: "Full-Stack Development"
   items:
+    - "Python"
+    - "Django"
     - "Flask APIs"
-    - "PHP"
+    - "ReactJS"
     - "JavaScript"
     - "AngularJS / Ionic"
+    - "PHP"
     - "Drupal"
     - "Agile delivery"
+
+- name: "Database"
+  items:
+    - "MongoDB"
+    - "PostgreSQL"
+    - "Database design"
+    - "ORM / ODM"
