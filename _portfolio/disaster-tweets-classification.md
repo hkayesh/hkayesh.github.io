@@ -1,7 +1,7 @@
 ---
 title: Disaster Tweets Classification
 kind: "Kaggle · Live demo"
-problem: "During a crisis, disaster-related tweets drown in noise. Responders need them filtered automatically — but short, unstructured text makes that a hard classification problem."
+problem: "During a crisis, disaster-related tweets drown in noise. Responders need them filtered automatically - but short, unstructured text makes that a hard classification problem."
 stack:
   - DistilBERT
   - Transfer learning
@@ -13,7 +13,7 @@ repo: "https://www.kaggle.com/code/hkayesh/twitter-disaster-nlp-with-fine-tuned-
 demo: "https://huggingface.co/spaces/hkayesh/twitter-disaster-nlp"
 featured: true
 weight: 1
-excerpt: "Fine-tuned DistilBERT to detect disaster-related tweets with 83%+ accuracy — try the live demo on Hugging Face."
+excerpt: "Fine-tuned DistilBERT to detect disaster-related tweets with 83%+ accuracy - try the live demo on Hugging Face."
 header:
   teaser: /assets/images/disaster-tweets-demo.gif
 ---

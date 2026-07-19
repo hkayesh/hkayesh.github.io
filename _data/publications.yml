@@ -1,5 +1,5 @@
-# Research — publication cards (sourced from Google Scholar, July 2026)
-intro: "My research asks how machines can detect why things happen — finding causal relationships buried in tweets and patient feedback using deep learning and transfer learning."
+# Research - publication cards (sourced from Google Scholar, July 2026)
+intro: "My research asks how machines can detect why things happen - finding causal relationships buried in tweets and patient feedback using deep learning and transfer learning."
 stats: "236 citations · h-index 10 · i10-index 10"
 scholar_url: "https://scholar.google.com/citations?user=oqlGWy4AAAAJ&hl=en"
 
@@ -8,7 +8,7 @@ papers:
     venue: "arXiv:1901.03526"
     year: 2019
     url: "https://arxiv.org/abs/1901.03526"
-    snippet: "A neural approach to identifying causal relationships between events mentioned in tweets — the foundation of my PhD work on causal discovery in text."
+    snippet: "A neural approach to identifying causal relationships between events mentioned in tweets - the foundation of my PhD work on causal discovery in text."
     topics:
       - "Causal inference"
       - "Social-media NLP"
@@ -19,7 +19,7 @@ papers:
     venue: "IJCNN"
     year: 2020
     url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oqlGWy4AAAAJ&citation_for_view=oqlGWy4AAAAJ:YsMSGLbcyi4C"
-    snippet: "Fine-tunes transformer models to answer yes/no causal questions — does X cause Y? — transferring knowledge from large corpora to limited labelled data."
+    snippet: "Fine-tunes transformer models to answer yes/no causal questions - does X cause Y? - transferring knowledge from large corpora to limited labelled data."
     topics:
       - "Transfer learning"
       - "Causal inference"
@@ -60,10 +60,10 @@ papers:
     citations: 10
 
   - title: "A causality driven approach to adverse drug reactions detection in tweets"
-    venue: "ADMA — best paper runner-up"
+    venue: "ADMA - best paper runner-up"
     year: 2019
     url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oqlGWy4AAAAJ&citation_for_view=oqlGWy4AAAAJ:qjMakFHDy7sC"
-    snippet: "Causality-driven features for detecting adverse drug reactions in tweets — recognised with the ADMA 2019 best paper runner-up award."
+    snippet: "Causality-driven features for detecting adverse drug reactions in tweets - recognised with the ADMA 2019 best paper runner-up award."
     topics:
       - "Causal inference"
       - "Health NLP"

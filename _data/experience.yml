@@ -1,9 +1,9 @@
-# Experience timeline — roles, impact bullets, one standout achievement each
+# Experience timeline - roles, impact bullets, one standout achievement each
 # Synchronised with the current résumé (Humayun_Kayesh_CV_ML_Eng.pdf)
 - role: "Machine Learning Engineer"
   org: "Robotic Marketer Ltd."
   location: "Melbourne, Australia"
-  period: "Jun 2022 — Present"
+  period: "Jun 2022 - Present"
   current: true
   bullets:
     - "Architected an ML-based direct marketing platform from scratch, handling thousands of data points."
@@ -16,7 +16,7 @@
 - role: "Research Assistant (part-time)"
   org: "HealthcareLogic Pty Ltd."
   location: "Gold Coast, Australia"
-  period: "Jul 2021 — Apr 2022"
+  period: "Jul 2021 - Apr 2022"
   bullets:
     - "Designed and developed a machine learning model for hospital length-of-stay (LoS) prediction."
     - "Experimented, analysed and evaluated several machine learning models for regression."
@@ -26,7 +26,7 @@
 - role: "AI Research Engineer (part-time)"
   org: "DeepCognito Ltd."
   location: "Manchester, UK"
-  period: "Jun 2020 — Sep 2020"
+  period: "Jun 2020 - Sep 2020"
   bullets:
     - "Designed, implemented and evaluated the performance of several machine learning models for continuous learning."
     - "Implemented several core components of an existing continuous learning framework in Python."
@@ -36,7 +36,7 @@
 - role: "Software Engineer (part-time)"
   org: "DeepCognito Ltd."
   location: "Manchester, UK"
-  period: "Oct 2017 — Mar 2018"
+  period: "Oct 2017 - Mar 2018"
   bullets:
     - "Developed a conversational AI chatbot using RASA and ML that answers user queries."
     - "Extracted topics and associated sentiments from patient feedback comments."
@@ -46,7 +46,7 @@
 - role: "Software Engineer"
   org: "Jaxara IT Limited"
   location: "Dhaka, Bangladesh"
-  period: "Dec 2015 — Aug 2016"
+  period: "Dec 2015 - Aug 2016"
   bullets:
     - "Transformed client requirements into requirement specifications."
     - "Designed and set up system architecture by following standard practices."
@@ -55,7 +55,7 @@
 - role: "Software Engineer"
   org: "Nascenia IT"
   location: "Dhaka, Bangladesh"
-  period: "Jun 2013 — Mar 2015"
+  period: "Jun 2013 - Mar 2015"
   bullets:
     - "Developed a betting-related PHP web application requiring REST API integration."
     - "Integrated the social media login API into a web application."

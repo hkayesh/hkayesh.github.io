@@ -1,6 +1,6 @@
 {% comment %}
   Project / case-study card.
-  Expects `include.item` — a portfolio document with front matter:
+  Expects `include.item` - a portfolio document with front matter:
   title, kind, problem, stack[], result, repo, demo, header.teaser
 {% endcomment %}
 {% assign p = include.item %}
@@ -49,7 +49,7 @@
         </a>
       {% endif %}
       {% unless p.repo or p.demo %}
-        <span class="card__link card__link--muted">Proprietary — details on request</span>
+        <span class="card__link card__link--muted">Proprietary - details on request</span>
       {% endunless %}
     </p>
   </div>
