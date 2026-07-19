@@ -1,39 +1,40 @@
 # Expertise — grouped capability pills
-- name: "LLMs & NLP"
+# Synchronised with the current résumé (Humayun_Kayesh_CV_ML_Eng.pdf)
+- name: "LLMs & Gen AI"
   items:
-    - "LLMs fine-tuning"
-    - "OpenAI API"
-    - "Embeddings & semantic similarity"
+    - "GPT fine-tuning"
+    - "OpenAI / Claude / OpenRouter / DeepSeek APIs"
+    - "OpenAI embeddings & semantic similarity"
+    - "AI content generation"
+    - "Image generation"
     - "Transfer learning (BERT / DistilBERT)"
     - "Topic modeling"
     - "Sentiment analysis"
     - "Causality detection"
-    - "Sequence labelling"
-    - "Named entity recognition (NER)"
 
 - name: "MLOps"
   items:
-    - "Model evaluation frameworks"
-    - "Continuous learning"
-    - "CI/CD (CodePipeline, CodeDeploy)"
-    - "Experiment design"
-    - "Docker / Containerization"
+    - "Continuous learning frameworks"
+    - "Model evaluation & experiment design"
+    - "CI/CD (CodeCommit, CodeDeploy)"
+    - "Serverless pipelines"
 
 - name: "Cloud & Serverless"
   items:
     - "AWS Lambda"
     - "API Gateway"
-    - "OpenSearch / Elasticsearch"
     - "EC2"
+    - "DynamoDB"
     - "S3"
-    - "ECR"
+    - "SQS"
+    - "Redis Queue"
 
 - name: "Data Engineering"
   items:
-    - "Pandas"
-    - "NumPy"
+    - "Python (pandas, NumPy, matplotlib)"
     - "scikit-learn"
-    - "TensorFlow / Keras"
+    - "TensorFlow / PyTorch"
+    - "ElasticSearch / OpenSearch"
     - "Scraping pipelines"
     - "R"
 
@@ -47,13 +48,12 @@
     - "AngularJS / Ionic"
     - "PHP"
     - "Drupal"
+    - "RASA"
     - "Agile delivery"
 
 - name: "Database"
   items:
     - "MongoDB"
     - "PostgreSQL"
-    - "MySQL"
-    - "DynamoDB"
     - "Database design"
     - "ORM / ODM"

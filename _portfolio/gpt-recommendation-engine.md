@@ -1,33 +1,38 @@
 ---
-title: GPT-Powered Recommendation Engine
+title: AI-Powered Marketing Platform
 kind: "Production AI · Robotic Marketer"
-problem: "A marketing platform needed to match every client with the right events, media outlets and awards from a large, constantly shifting catalogue — keyword matching produced too many irrelevant recommendations."
+problem: "A direct marketing platform needed to generate on-brand, customised content at volume — keyword and manual workflows couldn't keep up."
 stack:
   - GPT fine-tuning
+  - Claude / OpenRouter / DeepSeek
   - OpenAI embeddings
-  - OpenSearch
-  - AWS Lambda
   - Flask
-result: ">80%"
-result_label: "Matching accuracy sustained in production"
+  - Redis Queue
+  - AWS Lambda
+  - Django
+result: "ML Architecture"
+result_label: "ML marketing platform architected end-to-end"
 featured: true
 weight: 3
-excerpt: "Semantic-similarity and GPT-based recommendation engines matching clients to events, media and awards at >80% accuracy in production."
+excerpt: "Architected an ML-based direct marketing platform from scratch — with AI content generation, image generation, and a CRM system."
 header:
   teaser: /assets/images/card-recommendation-engine.svg
 ---
 
-At Robotic Marketer I engineered the recommendation services behind the platform's
-client-matching features.
+At Robotic Marketer I architected an ML-based direct marketing platform from scratch, handling
+thousands of data points.
 
-- **Semantic recommendation** — algorithms combining OpenAI embeddings, semantic similarity and OpenSearch
-  recommend relevant events, media outlets and awards for each client, consistently maintaining
-  accuracy above 80%.
-- **Competitor intelligence** — a serverless AWS Lambda application identifies a business's competitors
-  through automated Google search, filtering and ranking candidates by semantic similarity at 80–90% accuracy.
-- **Generative content** — fine-tuned GPT models autonomously generate customised, on-brand blog headings,
-  improving content-creation efficiency.
-- **Service architecture** — backend APIs in Flask connect the ML components into a robust,
-  maintainable system.
+- **Content generation engine** — developed an AI-powered content generation engine and exposed it
+  through a REST API.
+- **Image generation** — created an image generation platform that lets users reliably generate
+  brand-specific content.
+- **CRM system** — designed and supervised the development of a CRM system featuring lead pipeline
+  tracking and management.
+- **Serverless automation** — built serverless applications to automate website scraping, data
+  extraction and analysis.
+- **GPT integration** — fine-tuned and integrated GPT models to automatically generate customised
+  content.
+- **API layer** — designed and implemented REST APIs using Flask, Redis Queue and Python to support
+  front-end applications.
 
 *Proprietary system — architecture and results shared at a high level; details available on request.*
