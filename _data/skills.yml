@@ -1,13 +1,15 @@
 # Expertise — grouped capability pills
 - name: "LLMs & NLP"
   items:
-    - "GPT fine-tuning"
+    - "LLMs fine-tuning"
     - "OpenAI API"
     - "Embeddings & semantic similarity"
     - "Transfer learning (BERT / DistilBERT)"
     - "Topic modeling"
     - "Sentiment analysis"
     - "Causality detection"
+    - "Sequence labelling"
+    - "Named entity recognition (NER)"
 
 - name: "MLOps"
   items:
@@ -15,17 +17,21 @@
     - "Continuous learning"
     - "CI/CD (CodePipeline, CodeDeploy)"
     - "Experiment design"
+    - "Docker / Containerization"
 
 - name: "Cloud & Serverless"
   items:
     - "AWS Lambda"
     - "API Gateway"
-    - "OpenSearch"
+    - "OpenSearch / Elasticsearch"
     - "EC2"
+    - "S3"
+    - "ECR"
 
 - name: "Data Engineering"
   items:
-    - "Python (pandas, NumPy)"
+    - "Pandas"
+    - "NumPy"
     - "scikit-learn"
     - "TensorFlow / Keras"
     - "Scraping pipelines"
@@ -47,5 +53,7 @@
   items:
     - "MongoDB"
     - "PostgreSQL"
+    - "MySQL"
+    - "DynamoDB"
     - "Database design"
     - "ORM / ODM"

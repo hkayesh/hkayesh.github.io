@@ -8,7 +8,7 @@ stack:
   - n-gram features
   - Topic classification
   - R
-result: "NHS DEPEND study"
+result: "NHS Study"
 result_label: "Corpus & methods published in Health and Social Care Delivery Research"
 repo: "https://github.com/hkayesh/depend_clean"
 featured: true
