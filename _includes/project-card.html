@@ -1,0 +1,56 @@
+{% comment %}
+  Project / case-study card.
+  Expects `include.item` — a portfolio document with front matter:
+  title, kind, problem, stack[], result, repo, demo, header.teaser
+{% endcomment %}
+{% assign p = include.item %}
+<article class="card{% if include.reveal %} reveal{% endif %}">
+  {% if p.header.teaser %}
+    <a class="card__media" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ p.header.teaser | relative_url }}" alt="" loading="lazy">
+    </a>
+  {% else %}
+    <a class="card__media card__media--pattern" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true">
+      <span class="card__media-initials">{{ p.title | split: " " | slice: 0, 2 | join: " " | slice: 0, 2 | upcase }}</span>
+    </a>
+  {% endif %}
+  <div class="card__body">
+    <p class="card__kind">{{ p.kind | default: "Project" }}</p>
+    <h3 class="card__title">
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </h3>
+    <p class="card__problem">{{ p.problem }}</p>
+    {% if p.stack %}
+      <ul class="pills pills--compact" aria-label="Tech stack">
+        {% for tech in p.stack %}
+          <li class="pill">{{ tech }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if p.result %}
+      <p class="card__result">
+        <span class="card__result-value">{{ p.result }}</span>
+        {% if p.result_label %}<span class="card__result-label">{{ p.result_label }}</span>{% endif %}
+      </p>
+    {% endif %}
+    <p class="card__links">
+      {% if p.repo %}
+        <a href="{{ p.repo }}" rel="nofollow noopener noreferrer" class="card__link">
+          {% if p.repo contains "github.com" %}
+            <i class="fab fa-github" aria-hidden="true"></i> Code
+          {% else %}
+            <i class="fas fa-code" aria-hidden="true"></i> Code
+          {% endif %}
+        </a>
+      {% endif %}
+      {% if p.demo %}
+        <a href="{{ p.demo }}" rel="nofollow noopener noreferrer" class="card__link">
+          <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Demo
+        </a>
+      {% endif %}
+      {% unless p.repo or p.demo %}
+        <span class="card__link card__link--muted">Proprietary — details on request</span>
+      {% endunless %}
+    </p>
+  </div>
+</article>

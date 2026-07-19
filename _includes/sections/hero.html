@@ -1,0 +1,42 @@
+{% comment %} Hero — statement, outcome-focused intro, primary CTAs, socials {% endcomment %}
+<section id="about" class="hero">
+  <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__inner">
+    <p class="eyebrow reveal">ML Engineering &middot; NLP Research &middot; Causal Inference</p>
+    <h1 class="hero__title reveal">
+      Humayun Kayesh <span class="hero__dash">&mdash;</span><br>
+      ML Engineer <span class="hero__amp">&amp;</span> NLP Researcher
+    </h1>
+    <p class="hero__intro reveal">
+      I turn messy language data into production systems that make decisions —
+      from GPT-powered recommendation engines serving real clients to published
+      research on causal inference in social media. PhD, Commonwealth Scholar,
+      10+ years across the full path from research to deployment.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#work" class="btn btn--hero-primary">View projects</a>
+      <a href="{{ '/assets/files/Humayun-Kayesh-resume.pdf' | relative_url }}"
+         class="btn btn--hero-ghost" download>Download résumé</a>
+    </div>
+    <ul class="hero__socials reveal" aria-label="Social profiles">
+      <li>
+        <a href="mailto:{{ site.author.email }}" aria-label="Email">
+          <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+        </a>
+      </li>
+      {% for link in site.author.links %}
+        {% if link.url and link.icon %}
+          <li>
+            <a href="{{ link.url }}" rel="nofollow noopener noreferrer"
+               aria-label="{{ link.label }}">
+              <i class="{{ link.icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <a class="hero__scroll-hint" href="#credibility" aria-label="Scroll to content">
+    <span></span>
+  </a>
+</section>

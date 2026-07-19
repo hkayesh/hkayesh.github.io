@@ -1,0 +1,19 @@
+{% comment %} Credibility strip — compact stats + selected organisations {% endcomment %}
+{% assign cred = site.data.credibility %}
+<section id="credibility" class="section section--flush credibility">
+  <div class="section__inner">
+    <dl class="credibility__stats reveal-group">
+      {% for stat in cred.stats %}
+        <div class="credibility__stat reveal">
+          <dt class="credibility__value">{{ stat.value }}</dt>
+          <dd class="credibility__label">{{ stat.label }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+    <ul class="credibility__orgs reveal" aria-label="Selected organisations">
+      {% for org in cred.organisations %}
+        <li class="credibility__org">{{ org }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

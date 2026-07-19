@@ -1,9 +1,14 @@
 ---
 title: Portfolio
-layout: collection
+layout: single
 permalink: /portfolio/
-collection: portfolio
-entries_layout: grid
-classes: wide
+classes: page-full
+toc: false
 ---
-Some of my cool projects are displayed below. More projects to follow soon. 
+
+<div class="work__grid">
+  {% assign items = site.portfolio | sort: "weight" %}
+  {% for item in items %}
+    {% include project-card.html item=item %}
+  {% endfor %}
+</div>

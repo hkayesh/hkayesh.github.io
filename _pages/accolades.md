@@ -2,7 +2,7 @@
 layout: single
 title: "Accolades"
 permalink: /accolades/
-classes: wide
+classes: page-full
 toc: false
 ---
 

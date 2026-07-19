@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="">
+  <defs>
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101a2e"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.24" cy="0.76" r="0.62">
+      <stop offset="0" stop-color="#4da3ff" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#4da3ff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#4da3ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- base -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+
+  <!-- fine grid, same motif as the hero background -->
+  <g stroke="#ffffff" stroke-opacity="0.045" stroke-width="1">
+    <path d="M80 0V720M160 0V720M240 0V720M320 0V720M400 0V720M480 0V720M560 0V720M640 0V720M720 0V720M800 0V720M880 0V720M960 0V720M1040 0V720M1120 0V720M1200 0V720"/>
+    <path d="M0 80H1280M0 160H1280M0 240H1280M0 320H1280M0 400H1280M0 480H1280M0 560H1280M0 640H1280"/>
+  </g>
+
+  <!-- patient flow: pulse line across the frame -->
+  <path d="M0 430 L260 430 L320 430 L360 340 L410 500 L460 300 L510 460 L560 430 L760 430 L810 380 L860 470 L910 430 L1280 430"
+        fill="none" stroke="#4da3ff" stroke-opacity="0.85" stroke-width="3"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- soft echo of the same line -->
+  <path d="M0 470 L260 470 L330 470 L375 400 L420 530 L465 370 L515 500 L565 470 L760 470 L805 430 L855 510 L905 470 L1280 470"
+        fill="none" stroke="#7dbcff" stroke-opacity="0.18" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- measurement points along the pulse -->
+  <g fill="#4da3ff">
+    <circle cx="360" cy="340" r="5" fill-opacity="0.8"/>
+    <circle cx="460" cy="300" r="6" fill-opacity="0.95"/>
+    <circle cx="510" cy="460" r="4" fill-opacity="0.6"/>
+    <circle cx="810" cy="380" r="5" fill-opacity="0.75"/>
+  </g>
+  <circle cx="460" cy="300" r="18" fill="none" stroke="#4da3ff" stroke-opacity="0.3" stroke-width="1.5"/>
+  <circle cx="460" cy="300" r="32" fill="none" stroke="#4da3ff" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- sparse drifting points for depth -->
+  <g fill="#7dbcff">
+    <circle cx="140" cy="160" r="2.5" fill-opacity="0.35"/>
+    <circle cx="700" cy="140" r="2" fill-opacity="0.3"/>
+    <circle cx="1040" cy="200" r="2.5" fill-opacity="0.4"/>
+    <circle cx="1180" cy="560" r="2" fill-opacity="0.3"/>
+    <circle cx="240" cy="600" r="2" fill-opacity="0.28"/>
+  </g>
+</svg>

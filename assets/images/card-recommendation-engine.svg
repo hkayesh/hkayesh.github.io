@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a2e"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.76" cy="0.24" r="0.62">
+      <stop offset="0" stop-color="#4da3ff" stop-opacity="0.24"/>
+      <stop offset="0.55" stop-color="#4da3ff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#4da3ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- base -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+
+  <!-- fine grid, same motif as the hero background -->
+  <g stroke="#ffffff" stroke-opacity="0.045" stroke-width="1">
+    <path d="M80 0V720M160 0V720M240 0V720M320 0V720M400 0V720M480 0V720M560 0V720M640 0V720M720 0V720M800 0V720M880 0V720M960 0V720M1040 0V720M1120 0V720M1200 0V720"/>
+    <path d="M0 80H1280M0 160H1280M0 240H1280M0 320H1280M0 400H1280M0 480H1280M0 560H1280M0 640H1280"/>
+  </g>
+
+  <!-- recommendation network: connected nodes -->
+  <g stroke="#4da3ff" stroke-opacity="0.3" stroke-width="2" fill="none">
+    <path d="M820 190L980 150L1080 260L900 330L820 190"/>
+    <path d="M900 330L1060 420L1080 260"/>
+    <path d="M900 330L950 520L1060 420"/>
+    <path d="M820 190L780 380L900 330"/>
+    <path d="M780 380L950 520"/>
+  </g>
+  <g fill="#4da3ff">
+    <circle cx="820" cy="190" r="7" fill-opacity="0.95"/>
+    <circle cx="980" cy="150" r="5" fill-opacity="0.7"/>
+    <circle cx="1080" cy="260" r="8" fill-opacity="0.9"/>
+    <circle cx="900" cy="330" r="10" fill-opacity="1"/>
+    <circle cx="1060" cy="420" r="5" fill-opacity="0.65"/>
+    <circle cx="950" cy="520" r="6" fill-opacity="0.75"/>
+    <circle cx="780" cy="380" r="4" fill-opacity="0.55"/>
+  </g>
+  <!-- halo on the central node -->
+  <circle cx="900" cy="330" r="22" fill="none" stroke="#4da3ff" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="900" cy="330" r="38" fill="none" stroke="#4da3ff" stroke-opacity="0.14" stroke-width="1"/>
+
+  <!-- sparse drifting points for depth -->
+  <g fill="#7dbcff">
+    <circle cx="180" cy="180" r="2.5" fill-opacity="0.4"/>
+    <circle cx="320" cy="520" r="2" fill-opacity="0.3"/>
+    <circle cx="480" cy="140" r="2" fill-opacity="0.35"/>
+    <circle cx="240" cy="380" r="2.5" fill-opacity="0.25"/>
+    <circle cx="560" cy="600" r="2" fill-opacity="0.3"/>
+    <circle cx="1200" cy="600" r="2.5" fill-opacity="0.35"/>
+  </g>
+</svg>

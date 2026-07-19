@@ -7,18 +7,26 @@ Built with [Jekyll](https://jekyllrb.com/) using the [Minimal Mistakes](https://
 
 ## Project Structure
 
+The homepage is a custom dark "editorial" one-page design built on the Minimal Mistakes theme.
+
 | Path | Purpose |
 |---|---|
 | `_config.yml` | Global site configuration (title, author, social links, plugins, collections) |
-| `_pages/` | Static pages (About, Experience, Education, Skills, Portfolio, CV, etc.) |
-| `_portfolio/` | Portfolio collection entries (individual project pages) |
-| `_data/` | Navigation and UI text data files |
-| `_includes/`, `_layouts/`, `_sass/` | Theme overrides and custom components |
-| `assets/` | Images, CSS, JS, and downloadable files |
-| `index.md` | Home page |
-| `blog.html` | Blog index page |
+| `_layouts/landing.html` | Custom homepage layout — renders the section stack |
+| `_includes/sections/` | Homepage sections: hero, credibility, work, skills, experience, publications, beyond, contact |
+| `_includes/project-card.html` | Case-study card (used by the homepage and `/portfolio/`) |
+| `_includes/timeline.html`, `_includes/skills-groups.html` | Shared partials (homepage and `/experience/`, `/skills/`) |
+| `_sass/minimal-mistakes/skins/_editorial.scss` | Custom dark skin (navy/off-white/electric blue, Fraunces + Inter) |
+| `_sass/custom.scss` | All editorial section styles and reveal motion |
+| `assets/js/landing.js` | Hero canvas, scroll reveals, timeline progress (no dependencies) |
+| `_data/experience.yml` | Timeline roles, impact bullets, standout achievements |
+| `_data/skills.yml` | Grouped expertise pills |
+| `_data/publications.yml` | Paper cards (title, venue, snippet, topics, citations, links) |
+| `_data/credibility.yml` | Credibility-strip stats and organisations |
+| `_pages/` | Secondary pages (Portfolio, Experience, Skills, Education, CV, etc.) |
+| `_portfolio/` | Portfolio/case-study entries (featured ones appear on the homepage) |
+| `assets/files/` | Résumé PDF and other downloads |
 | `Gemfile` | Ruby dependencies for local development (Jekyll 4) |
-| `package.json` | Node tooling — only needed to rebuild/minify JS assets |
 
 ## Run Locally
 

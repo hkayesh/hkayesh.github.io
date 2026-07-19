@@ -1,0 +1,13 @@
+{% comment %} Skills grid markup only — reusable by the landing section and /skills/ page {% endcomment %}
+<div class="skills__groups">
+  {% for group in site.data.skills %}
+    <div class="skills__group reveal">
+      <h3 class="skills__name">{{ group.name }}</h3>
+      <ul class="pills">
+        {% for item in group.items %}
+          <li class="pill">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

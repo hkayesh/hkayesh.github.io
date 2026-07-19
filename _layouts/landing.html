@@ -1,0 +1,47 @@
+---
+---
+
+<!doctype html>
+<!--
+  Editorial landing layout — dark "AI engineer" one-page portfolio.
+  Built on Minimal Mistakes Jekyll Theme 4.24.0 (MIT, Michael Rose).
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--landing">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+
+    <main class="initial-content landing">
+      {% include sections/hero.html %}
+      {% include sections/credibility.html %}
+      {% include sections/work.html %}
+      {% include sections/skills.html %}
+      {% include sections/experience.html %}
+      {% include sections/publications.html %}
+      {% include sections/beyond.html %}
+      {% include sections/contact.html %}
+      {{ content }}
+    </main>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

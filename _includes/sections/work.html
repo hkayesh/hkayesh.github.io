@@ -1,0 +1,16 @@
+{% comment %} Selected Work — featured case-study cards from the portfolio collection {% endcomment %}
+<section id="work" class="section">
+  <div class="section__inner">
+    <p class="eyebrow reveal">Selected Work</p>
+    <h2 class="section__title reveal">Projects with measurable outcomes</h2>
+    <div class="work__grid">
+      {% assign featured = site.portfolio | where: "featured", true | sort: "weight" %}
+      {% for item in featured %}
+        {% include project-card.html item=item reveal=true %}
+      {% endfor %}
+    </div>
+    <p class="section__more reveal">
+      <a href="{{ '/portfolio/' | relative_url }}" class="link-arrow">Browse all projects</a>
+    </p>
+  </div>
+</section>

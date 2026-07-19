@@ -1,0 +1,24 @@
+{% comment %} Timeline markup only — reusable by the landing section and /experience/ page {% endcomment %}
+<div class="timeline" id="timeline">
+  <div class="timeline__track" aria-hidden="true">
+    <div class="timeline__progress" id="timeline-progress"></div>
+  </div>
+  {% for role in site.data.experience %}
+    <article class="timeline__item reveal">
+      <div class="timeline__dot{% if role.current %} timeline__dot--current{% endif %}" aria-hidden="true"></div>
+      <p class="timeline__period">{{ role.period }}</p>
+      <h3 class="timeline__role">{{ role.role }}</h3>
+      <p class="timeline__org">{{ role.org }}{% if role.location %} &middot; {{ role.location }}{% endif %}</p>
+      <ul class="timeline__bullets">
+        {% for bullet in role.bullets %}
+          <li>{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+      {% if role.standout %}
+        <p class="timeline__standout">
+          <i class="fas fa-star" aria-hidden="true"></i> {{ role.standout }}
+        </p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

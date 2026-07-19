@@ -1,0 +1,17 @@
+# Credibility strip — compact stats and selected organisations
+stats:
+  - value: "PhD"
+    label: "ML & NLP, Griffith University"
+  - value: "Commonwealth Scholar"
+    label: "University of Manchester"
+  - value: "10+ yrs"
+    label: "Software, data & ML"
+  - value: "236"
+    label: "Citations · h-index 10"
+
+organisations:
+  - "Griffith University"
+  - "University of Manchester"
+  - "Robotic Marketer"
+  - "HealthcareLogic"
+  - "DeepCognito"

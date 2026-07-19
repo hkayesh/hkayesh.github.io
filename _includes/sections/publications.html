@@ -1,0 +1,43 @@
+{% comment %} Research — publication cards driven by _data/publications.yml {% endcomment %}
+{% assign pubs = site.data.publications %}
+<section id="publications" class="section section--alt">
+  <div class="section__inner">
+    <p class="eyebrow reveal">Research</p>
+    <h2 class="section__title reveal">Causal inference &amp; social-media NLP</h2>
+    <p class="section__lede reveal">
+      {{ pubs.intro }}
+    </p>
+    <div class="pubs__grid">
+      {% for paper in pubs.papers %}
+        <article class="pub-card reveal">
+          <p class="pub-card__venue">{{ paper.venue }} &middot; {{ paper.year }}</p>
+          <h3 class="pub-card__title">
+            {% if paper.url %}
+              <a href="{{ paper.url }}" rel="nofollow noopener noreferrer">{{ paper.title }}</a>
+            {% else %}
+              {{ paper.title }}
+            {% endif %}
+          </h3>
+          <p class="pub-card__snippet">{{ paper.snippet }}</p>
+          <ul class="pills pills--compact" aria-label="Topics">
+            {% for topic in paper.topics %}
+              <li class="pill pill--topic">{{ topic }}</li>
+            {% endfor %}
+          </ul>
+          <p class="pub-card__meta">
+            {% if paper.citations %}
+              <span class="pub-card__citations">{{ paper.citations }} citations</span>
+            {% endif %}
+            {% if paper.url %}
+              <a href="{{ paper.url }}" rel="nofollow noopener noreferrer" class="card__link">Read paper</a>
+            {% endif %}
+          </p>
+        </article>
+      {% endfor %}
+    </div>
+    <p class="section__more reveal">
+      <span class="pubs__stat">{{ pubs.stats }}</span>
+      <a href="{{ pubs.scholar_url }}" rel="nofollow noopener noreferrer" class="link-arrow">Full Google Scholar profile</a>
+    </p>
+  </div>
+</section>

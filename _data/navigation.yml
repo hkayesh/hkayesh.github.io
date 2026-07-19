@@ -1,18 +1,12 @@
 # main links
 main:
-   - title: "Portfolio"
-     url: /portfolio/
+   - title: "About"
+     url: /#about
+   - title: "Work"
+     url: /#work
    - title: "Experience"
-     url: /experience/
-   - title: "Education"
-     url: /education/
-   - title: "Skills"
-     url: /skills/
-   - title: "Accolades"
-     url: /accolades/
-   - title: "Timeline"
-     url: /timeline/
-   - title: "Resources"
-     url: /resources/
-   - title: "About Me"
-     url: /
+     url: /#experience
+   - title: "Publications"
+     url: /#publications
+   - title: "Contact"
+     url: /#contact
